@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-size: 1.2em;
+    overflow: hidden;
+    text-align: center;
+}
+.left, .right {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+.scoring {
+    position: absolute;
+    font-family: Monospace;
+    width: 100%;
+    z-index: 3;
+    top: 25%;
+    font-size: 2em;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.score {
+    font-size: 1.2em;
+}
+.start {
+    border: none;
+    background-color: #eee;
+    height: 40px;
+    width: 80px;
+    box-shadow: 0 0 3px 0 #555;
+}
+.anim {
+    top: 0;
+    font-size: 1.2em;
+}

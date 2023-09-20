@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Info</title>
+        <meta name="author" content="Domagoj Puljic" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="col-xs-12 spinner">
+            <img src="./res/loader.png" width="50" height="50">
+        </div>
+        <div class="container-fluid text-center">
+            <span class="city text-center"></span>
+            <div class="col-xs-12">
+                <input type="submit" id="change" class="btn btn-primary" value="°F">
+                <input type="text" id="input-city" placeholder="..enter city">
+                <input type="submit" id="submit" class="btn btn-primary" value="Go">
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-6">
+                  <img class="condition-icon center-block">
+                  <span class="weather-descr"></span>
+                </div>
+                <div class="col-xs-6 tdiv">
+                    <span class="temp"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <img src="./res/humidity.PNG" class="img-responsive center-block img-rad" style="max-width:27%;min-width:50px;">
+                    <span class="humid"></span>
+                </div>
+                <div class="col-xs-4">
+                    <img class="compass img-responsive center-block img-rad" src="./res/compass.png" style="max-width:25%;min-width:50px;">
+                    <span class="wind center-block"></span>
+                </div>
+                <div class="col-xs-4">
+                    <img src="./res/pres.PNG" class="img-responsive center-block img-rad" style="max-width:25%;min-width:50px;">
+                    <span class="pressure"></span>
+                </div>
+            </div>
+            <footer class="foot text-center">Created by <span style="color:#f83;">Domagoj Puljić</span></footer>
+        </div>
+    </body>
+</html>
